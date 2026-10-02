@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Glow Hunt</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Background stars -->
+    <div class="stars"></div>
+
+    <!-- Main menu -->
+    <div id="menu" class="screen">
+
+        <div class="logo">
+            <span>✦</span>
+            GLOW HUNT
+        </div>
+
+        <p class="tagline">
+            Chase the light. Beat your score.
+        </p>
+
+        <div class="game-preview">
+            <div class="preview-orb"></div>
+        </div>
+
+        <button id="startBtn" class="main-btn">
+            PLAY NOW
+        </button>
+
+        <div class="best-score">
+            BEST SCORE
+            <strong id="menuBest">0</strong>
+        </div>
+
+        <p class="instructions">
+            Collect ⭐ &nbsp; Avoid 🔴 &nbsp; Find 💎
+        </p>
+
+    </div>
+
+
+    <!-- Game -->
+    <div id="game" class="hidden">
+
+        <div class="top-bar">
+
+            <div class="stat">
+                <span>SCORE</span>
+                <strong id="score">0</strong>
+            </div>
+
+            <div class="stat combo">
+                <span>COMBO</span>
+                <strong id="combo">x1</strong>
+            </div>
+
+            <div class="stat">
+                <span>TIME</span>
+                <strong id="time">60</strong>
+            </div>
+
+        </div>
+
+
+        <div id="gameArea">
+
+            <div id="player"></div>
+
+        </div>
+
+
+        <div class="bottom-bar">
+
+            <div>
+                ❤️ <span id="lives">3</span>
+            </div>
+
+            <div>
+                BEST <span id="best">0</span>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- Game over -->
+    <div id="gameOver" class="screen hidden">
+
+        <div class="game-over-icon">✦</div>
+
+        <h1>TIME'S UP</h1>
+
+        <p class="final-label">YOUR SCORE</p>
+
+        <div id="finalScore" class="final-score">
+            0
+        </div>
+
+        <p id="newBest" class="new-best hidden">
+            ✨ NEW BEST SCORE!
+        </p>
+
+        <div class="result-row">
+
+            <div>
+                <span>BEST</span>
+                <strong id="finalBest">0</strong>
+            </div>
+
+            <div>
+                <span>COMBO</span>
+                <strong id="finalCombo">x1</strong>
+            </div>
+
+        </div>
+
+        <button id="againBtn" class="main-btn">
+            PLAY AGAIN
+        </button>
+
+        <button id="homeBtn" class="text-btn">
+            BACK TO MENU
+        </button>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
